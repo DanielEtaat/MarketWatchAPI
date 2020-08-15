@@ -34,7 +34,7 @@ class Strategy:
 			return -int(action), 0, int(short_action)
 		return 0, 0, 0
 
-class OptimisticAverage: # assumes market is about to change direction
+class OptimisticAverage: # assumes market will continue in the same direction
 
 	def __init__(self, risk=10e6):
 		self.risk = risk
